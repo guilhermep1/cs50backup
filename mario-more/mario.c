@@ -9,17 +9,17 @@ int main(void)
     {
         height = get_int("Height: ");
     }
-    while(height<1 || height>8);
+    while (height < 1 || height > 8);
 
     //row
-    for(int i=0; i<height; i++)
+    for (int i = 0; i < height; i++)
     {
-        int k=0;
+        int k = 0;
         //column
-        for(int j=0; j<=i; j++)
+        for (int j = 0; j <= i; j++)
         {
             //space
-            while(k<height-i-1)
+            while (k < height - i - 1)
             {
                 printf(" ");
                 k++;
@@ -32,7 +32,7 @@ int main(void)
         printf("  ");
 
         //second pyramid
-        for(int j=0; j<=i; j++)
+        for (int j = 0; j <= i; j++)
         {
             //brick
             printf("#");
