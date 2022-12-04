@@ -5,22 +5,23 @@ long checksum(long credit);
 
 int main(void)
 {
-    bool validity = false;
+    bool validity;
     long credit = get_long("Number: ");
     checksum(credit);
 }
 
+//Checksum function
 long checksum(long credit)
 {
     int digit;
     int sum;
-    credit/=10;
-    while(credit>=10)
+    credit /= 10;
+    while( credit >= 10)
     {
-        digit = credit%10;
-        credit = credit/100;
-
+        digit = credit % 10;
+        credit /= 100;
+        sum += (digit*2);
     }
-    printf("\n");
+    printf("%d\n",sum);
     return 0;
 }
