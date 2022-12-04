@@ -115,12 +115,10 @@ int checkcard(long credit)
         case 4:
             printf("VISA\n");
             break;
-
         case 34:
         case 37:
             printf("AMEX\n");
             break;
-
         case 51:
         case 52:
         case 53:
