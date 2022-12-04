@@ -11,9 +11,13 @@ int main(void)
 
 long checksum(long credit)
 {
+    int digit;
     while(credit>=10){
         credit = credit/10;
-        printf("%ld",credit%10);
+        printf("%ld\n", credit);
+        digit = credit%10;
+        printf("%d\n",digit);
     }
+    printf("\n");
     return 0;
 }
