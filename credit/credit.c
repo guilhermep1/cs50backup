@@ -12,10 +12,11 @@ int main(void)
 long checksum(long credit)
 {
     int digit;
+    credit/=10;
     while(credit>=10){
-        credit = credit/10;
-        printf("%ld\n", credit);
         digit = credit%10;
+        credit = credit/100;
+        // printf("%ld\n", credit);
         printf("%d\n",digit);
     }
     printf("\n");
