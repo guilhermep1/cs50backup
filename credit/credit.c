@@ -96,13 +96,12 @@ int checkcard(long credit)
     while(credit >= 100)
     {
         credit/=10;
-        printf("%ld\n", credit);
     }
 
     //for VISA cards - gets first digit only
     if(credit / 10 == 4)
     {
-        
+        credit/=10;
     }
 
     //verifies credit card type
