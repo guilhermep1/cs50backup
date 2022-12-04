@@ -11,7 +11,7 @@ int main(void)
     {
         credit = get_long("Number: ");
         checksum(credit);
-        printf("%ld", credit % -100);
+        printf("%ld\n", credit);
     }
     while(credit<1);
 }
