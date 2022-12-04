@@ -9,12 +9,12 @@ int main(void)
     bool validity;
     long credit;
 
-    do
-    {
+    // do
+    // {
         credit = get_long("Number: ");
         validity = checksum(credit);
-    }
-    while(credit < 1);
+    // }
+    // while(credit < 1);
 
     if(validity == true)
     {
