@@ -38,7 +38,7 @@ bool checksum(long credit)
     int sumall;
 
     //checks for minimum digits
-    if(credit/10000000000000<1)
+    if(credit/1000000000000<1)
     {
         return false;
     }
