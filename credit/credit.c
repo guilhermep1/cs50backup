@@ -103,7 +103,12 @@ int checkcard(long credit)
     switch(credit)
     {
         case 13:
-        
+        case 16:
+            printf("VISA");
+            break;
+
+        case
+
 
     }
 
