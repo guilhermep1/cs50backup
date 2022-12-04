@@ -6,9 +6,10 @@ bool checksum(long credit);
 int main(void)
 {
     bool validity;
+    long credit;
     do
     {
-        long credit = get_long("Number: ");
+        credit = get_long("Number: ");
         checksum(credit);
         printf("%ld", credit % -100);
     }
