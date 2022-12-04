@@ -31,11 +31,11 @@ bool checksum(long credit)
 {
     long credit2 = credit;
     long credit1 = credit;
-    int digit;
-    int digit1;
-    int sum = 0;
-    int sum1 = 0;
-    int sumall;
+    long digit;
+    long digit1;
+    long sum = 0;
+    long sum1 = 0;
+    long sumall;
 
     //sums digits not multiplied by 2
     while (credit1 > 0)
