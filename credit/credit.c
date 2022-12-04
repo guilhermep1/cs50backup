@@ -33,7 +33,7 @@ bool checksum(long credit)
     int sum = 0;
     //reduces credit car number by 1 digit
     // credit /= 10;
-    while (credit >= 10)
+    while (credit > 0)
     {
         //gets last digit
         digit = credit % 10;
