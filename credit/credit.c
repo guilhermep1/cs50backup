@@ -15,8 +15,8 @@ int main(void)
         validity = checksum(credit);
     }
     while(credit<1);
-    
-    if(validity = true)
+
+    if(validity == true)
     {
         checkcard(credit);
     }
@@ -60,4 +60,5 @@ int checkcard(long credit)
         credit/=10;
         printf("%ld", credit);
     }
+    return 0;
 }
