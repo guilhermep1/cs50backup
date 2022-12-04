@@ -34,13 +34,13 @@ bool checksum(long credit)
     int sum = 0;
     //reduces credit car number by 1 digit
     credit2 /= 10;
-    while (credit > 0)
+    while (credit2 > 0)
     {
         //gets last digit
-        digit = credit % 10;
+        digit = credit2 % 10;
         //reduces credit car number by 2 digits
-        credit /= 100;
-        printf("card: %ld\n",credit);
+        credit2 /= 100;
+        printf("card: %ld\n",credit2);
         if(digit*2 >= 10)
         {
             digit = ((digit*2) / 10) + ((digit*2) % 10);
