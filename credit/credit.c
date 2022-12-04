@@ -6,10 +6,10 @@ long checksum(long credit);
 int main(void)
 {
     long credit = get_long("Number: ");
-    printf("%ld\n", (credit/10)%10);
+    checksum(credit);
 }
 
-// long checksum(credit)
-// {
-
-// }
+long checksum(credit)
+{
+    while(credit>)
+}
