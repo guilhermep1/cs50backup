@@ -37,6 +37,7 @@ bool checksum(long credit)
     int sum1 = 0;
     int sumall;
 
+    //sums digits not multiplied by 2
     while (credit1 > 0)
     {
         //gets last digit
@@ -58,6 +59,8 @@ bool checksum(long credit)
 
     //reduces credit car number by 1 digit
     credit2 /= 10;
+
+    //sums digits multiplied by 2
     while (credit2 > 0)
     {
         //gets last digit
@@ -76,8 +79,12 @@ bool checksum(long credit)
         }
         printf("sum: %d\n",sum);
     }
-    printf("%d\n",sum);
-    if(sum%10==0)
+
+    //sums the two values
+    sumall = sum + sum1;
+
+    printf("%d\n",sumall);
+    if(sumall%10==0)
     {
         return true;
     }
