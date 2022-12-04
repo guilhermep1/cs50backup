@@ -13,8 +13,9 @@ int main(void)
         validity = checksum(credit);
     }
     while(credit<1);
-    if(validity = true){
-        printf("%s")
+    if(validity = true)
+    {
+
     }
 }
 
