@@ -11,5 +11,8 @@ int main(void)
 
 long checksum(credit)
 {
-    while(credit>)
+    while(credit>=10){
+        credit = credit/10;
+        printf(credit%10);
+    }
 }
