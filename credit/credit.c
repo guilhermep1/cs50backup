@@ -102,7 +102,7 @@ int checkcard(long credit)
     //verifies credit card type
     switch(credit)
     {
-        case
+        case 13 || 16
     }
 
     return 0;
