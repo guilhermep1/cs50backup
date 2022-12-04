@@ -128,6 +128,7 @@ int checkcard(long credit)
             break;
         default:
             printf("INVALID\n");
+            break;
 
     }
 
