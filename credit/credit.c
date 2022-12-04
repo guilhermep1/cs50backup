@@ -38,7 +38,7 @@ bool checksum(long credit)
         //gets last digit
         digit = credit % 10;
         //reduces credit car number by 2 digits
-        credit /= 100;
+        credit /= 10;
         printf("card: %ld\n",credit);
         if(digit*2 >= 10)
         {
