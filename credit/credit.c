@@ -94,9 +94,10 @@ int checkcard(long credit)
 {
     int digits;
     //gets first two digits from credit card number
-    while(credit>=100)
+    while(credit>=10)
     {
         credit/=10;
+        printf("%ld\n", credit);
     }
 
     //verifies credit card type
