@@ -2,6 +2,7 @@
 #include <stdio.h>
 
 bool checksum(long credit);
+int checkcard(long credit);
 
 int main(void)
 {
@@ -15,7 +16,11 @@ int main(void)
     while(credit<1);
     if(validity = true)
     {
-        
+        checkcard(credit);
+    }
+    else
+    {
+        printf("INVALID");
     }
 }
 
@@ -44,3 +49,7 @@ bool checksum(long credit)
     }
 }
 
+int checkcard(long credit)
+{
+    
+}
