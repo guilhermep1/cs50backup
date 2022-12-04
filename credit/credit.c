@@ -11,6 +11,7 @@ int main(void)
         long credit = get_long("Number: ");
         checksum(credit);
     }
+    while()
 }
 
 //Checksum function
