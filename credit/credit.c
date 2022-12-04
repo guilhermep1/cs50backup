@@ -53,8 +53,8 @@ bool checksum(long credit)
         {
         sum1 += (digit1);
         }
-        printf("digit1: %d\n", digit1);
-        printf("sum1: %d\n", sum1);
+        // printf("digit1: %d\n", digit1);
+        // printf("sum1: %d\n", sum1);
     }
 
     //reduces credit car number by 1 digit
@@ -76,13 +76,13 @@ bool checksum(long credit)
         {
         sum += (digit * 2);
         }
-        printf("digit: %d\n", digit);
-        printf("sum: %d\n", sum);
+        // printf("digit: %d\n", digit);
+        // printf("sum: %d\n", sum);
     }
 
     //sums the two values
     sumall = sum + sum1;
-    printf("sumall: %d\n",sumall);
+    // printf("sumall: %d\n",sumall);
 
     //verifies credit card validity
     if(sumall%10==0)
