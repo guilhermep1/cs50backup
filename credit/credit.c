@@ -14,13 +14,14 @@ int main(void)
 long checksum(long credit)
 {
     int digit;
-    int sum;
+    int sum = 0;
     credit /= 10;
     while( credit >= 10)
     {
         digit = credit % 10;
         credit /= 100;
         sum += (digit*2);
+        printf("%d\n",sum);
     }
     printf("%d\n",sum);
     return 0;
