@@ -29,10 +29,11 @@ int main(void)
 //Checksum function
 bool checksum(long credit)
 {
+    int credit2;
     int digit;
     int sum = 0;
     //reduces credit car number by 1 digit
-      /= 10;
+    credit2 /= 10;
     while (credit > 0)
     {
         //gets last digit
