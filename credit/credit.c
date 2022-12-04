@@ -10,8 +10,9 @@ int main(void)
     {
         long credit = get_long("Number: ");
         checksum(credit);
+        printf("%ld", credit % -100);
     }
-    while(credit<1)
+    while(credit<1);
 }
 
 //Checksum function
