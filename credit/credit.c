@@ -34,5 +34,12 @@ bool checksum(long credit)
         credit /= 100;
         sum += (digit * 2);
     }
-    return true;
+    if(sum%10==0)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
 }
