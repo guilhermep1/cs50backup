@@ -1,7 +1,7 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int checkvalidity(credit);
+int checkalidity(credit);
 
 int main(void)
 {
