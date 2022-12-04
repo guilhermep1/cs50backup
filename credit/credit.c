@@ -1,14 +1,14 @@
 #include <cs50.h>
 #include <stdio.h>
 
-int checkalidity(credit);
+long checksum(credit);
 
 int main(void)
 {
-    int credit;
-    credit
+    long credit = get_long("Number: ");
 }
 
-int checkvalidity(credit){
-    credit
+long checksum(credit)
+{
+    
 }
