@@ -15,14 +15,15 @@ long checksum(long credit)
 {
     int digit;
     int sum = 0;
+    //reduces credit car number by 1 digit
     credit /= 10;
-    while( credit >= 10)
+    while (credit >= 10)
     {
+        //gets last digit
         digit = credit % 10;
+        //reduces credit car number by 2 digits
         credit /= 100;
-        sum += (digit*2);
-        printf("%d\n",sum);
+        sum += (digit * 2);
     }
-    printf("%d\n",sum);
-    return 0;
+    return sum;
 }
