@@ -22,7 +22,7 @@ int main(void)
     }
     else
     {
-        printf("INVALID");
+        printf("INVALID\n");
     }
 }
 
@@ -58,7 +58,7 @@ int checkcard(long credit)
     while(credit>=100)
     {
         credit/=10;
-        printf("%ld", credit);
+        printf("%ld\n", credit);
     }
     return 0;
 }
