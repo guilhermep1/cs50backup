@@ -44,7 +44,6 @@ bool checksum(long credit)
         digit1 = credit1 % 10;
         //reduces credit car number by 2 digits
         credit1 /= 100;
-        printf("card1: %ld\n",credit1);
         if(digit1*2 >= 10)
         {
             digit1 = ((digit1) / 10) + ((digit1) % 10);
@@ -54,7 +53,6 @@ bool checksum(long credit)
         {
         sum1 += (digit1);
         }
-        printf("sum1: %d\n",sum1);
     }
 
     //reduces credit car number by 1 digit
@@ -67,7 +65,6 @@ bool checksum(long credit)
         digit = credit2 % 10;
         //reduces credit car number by 2 digits
         credit2 /= 100;
-        printf("card: %ld\n",credit2);
         if(digit*2 >= 10)
         {
             digit = ((digit*2) / 10) + ((digit*2) % 10);
@@ -77,13 +74,12 @@ bool checksum(long credit)
         {
         sum += (digit * 2);
         }
-        printf("sum: %d\n",sum);
     }
 
     //sums the two values
     sumall = sum + sum1;
 
-    printf("%d\n",sumall);
+    //verifies credit card validity
     if(sumall%10==0)
     {
         return true;
@@ -101,7 +97,13 @@ int checkcard(long credit)
     while(credit>=100)
     {
         credit/=10;
-        printf("%ld\n", credit);
     }
+
+    //verifies credit card type
+    switch(credit)
+    {
+        case
+    }
+
     return 0;
 }
