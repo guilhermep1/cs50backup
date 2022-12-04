@@ -10,7 +10,6 @@ int main(void)
     do
     {
         credit = get_long("Number: ");
-        checksum(credit);
     }
     while(credit<1);
 }
