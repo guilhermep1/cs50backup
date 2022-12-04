@@ -5,12 +5,12 @@ bool checksum(long credit);
 
 int main(void)
 {
+    bool validity = false;
     long credit;
     do
     {
         credit = get_long("Number: ");
         checksum(credit);
-        printf("%ld\n", credit);
     }
     while(credit<1);
 }
