@@ -94,7 +94,7 @@ int checkcard(long credit)
 {
     int digits;
     //gets first two digits from credit card number
-    while(credit>=10)
+    while(credit>=100)
     {
         credit/=10;
         printf("%ld\n", credit);
@@ -104,12 +104,12 @@ int checkcard(long credit)
     switch(credit)
     {
         case 4:
-            printf("VISA");
+            printf("VISA\n");
             break;
 
         case 34:
         case 37:
-            printf("AMEX");
+            printf("AMEX\n");
             break;
 
         case 51:
@@ -117,7 +117,7 @@ int checkcard(long credit)
         case 53:
         case 54:
         case 55:
-            printf("MASTERCARD");
+            printf("MASTERCARD\n");
             break;
 
     }
