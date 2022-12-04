@@ -41,7 +41,7 @@ bool checksum(long credit)
         credit /= 100;
         printf("card: %ld\n",credit);
         if(digit >= 10){
-            digit = (digit/)
+            digit = ((digit / 10) % 10) + (digit % 10);
         }
         sum += (digit * 2);
         printf("sum: %d\n",sum);
