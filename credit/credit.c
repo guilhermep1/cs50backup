@@ -46,12 +46,12 @@ bool checksum(long credit)
         printf("card1: %ld\n",credit1);
         if(digit1*2 >= 10)
         {
-            digit1 = ((digit1*2) / 10) + ((digit1*2) % 10);
+            digit1 = ((digit1) / 10) + ((digit1) % 10);
             sum1 += digit1;
         }
         else
         {
-        sum1 += (digit1 * 2);
+        sum1 += (digit1);
         }
         printf("sum1: %d\n",sum1);
     }
