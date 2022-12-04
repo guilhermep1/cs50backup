@@ -6,15 +6,15 @@ int checkcard(long credit);
 
 int main(void)
 {
-    bool validity;
+    bool validity = false;
     long credit;
 
-    // do
-    // {
+    do
+    {
         credit = get_long("Number: ");
         validity = checksum(credit);
-    // }
-    // while(credit < 1);
+    }
+    while(credit < 1);
 
     if(validity == true)
     {
