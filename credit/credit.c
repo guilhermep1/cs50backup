@@ -9,7 +9,7 @@ int main(void)
     checksum(credit);
 }
 
-long checksum(credit)
+checksum(credit)
 {
     while(credit>=10){
         credit = credit/10;
