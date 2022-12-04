@@ -14,7 +14,7 @@ int main(void)
         credit = get_long("Number: ");
         validity = checksum(credit);
     }
-    while(credit<1);
+    while(credit < 1);
 
     if(validity == true)
     {
