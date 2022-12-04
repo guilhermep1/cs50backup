@@ -40,6 +40,9 @@ bool checksum(long credit)
         //reduces credit car number by 2 digits
         credit /= 100;
         printf("card: %ld\n",credit);
+        if(digit >= 10){
+            digit = (digit/)
+        }
         sum += (digit * 2);
         printf("sum: %d\n",sum);
     }
