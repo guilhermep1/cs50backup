@@ -92,12 +92,17 @@ bool checksum(long credit)
 
 int checkcard(long credit)
 {
-    int digits;
     //gets first two digits from credit card number
-    while(credit>=100)
+    while(credit >= 100)
     {
         credit/=10;
         printf("%ld\n", credit);
+    }
+
+    //for VISA cards - gets first digit only
+    if(credit / 10 == 4)
+    {
+        
     }
 
     //verifies credit card type
