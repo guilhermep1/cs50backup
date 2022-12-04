@@ -102,13 +102,22 @@ int checkcard(long credit)
     //verifies credit card type
     switch(credit)
     {
-        case 13:
-        case 16:
+        case 4:
             printf("VISA");
             break;
 
-        case
+        case 34:
+        case 37:
+            printf("AMEX");
+            break;
 
+        case 51:
+        case 52:
+        case 53:
+        case 54:
+        case 55:
+            printf("MASTERCARD");
+            break;
 
     }
 
