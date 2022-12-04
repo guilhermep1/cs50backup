@@ -29,10 +29,33 @@ int main(void)
 //Checksum function
 bool checksum(long credit)
 {
-    int credit2 = credit;
-    int credit1 = credit;
+    long credit2 = credit;
+    long credit1 = credit;
     int digit;
+    int digit1;
     int sum = 0;
+    int sum1 = 0;
+    int sumall;
+
+    while (credit1 > 0)
+    {
+        //gets last digit
+        digit1 = credit1 % 10;
+        //reduces credit car number by 2 digits
+        credit1 /= 100;
+        printf("card1: %ld\n",credit1);
+        if(digit1*2 >= 10)
+        {
+            digit1 = ((digit1*2) / 10) + ((digit1*2) % 10);
+            sum1 += digit1;
+        }
+        else
+        {
+        sum1 += (digit1 * 2);
+        }
+        printf("sum1: %d\n",sum1);
+    }
+
     //reduces credit car number by 1 digit
     credit2 /= 10;
     while (credit2 > 0)
