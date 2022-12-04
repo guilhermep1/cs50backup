@@ -37,6 +37,12 @@ bool checksum(long credit)
     int sum1 = 0;
     int sumall;
 
+    //checks for minimum digits
+    if(credit/10000000000000<1)
+    {
+        return false;
+    }
+
     //sums digits not multiplied by 2
     while (credit1 > 0)
     {
@@ -97,12 +103,6 @@ bool checksum(long credit)
 
 int checkcard(long credit)
 {
-
-    //checks for minimum digits
-    if(credit/10000000000000<1)
-    {
-        return false;
-    }
 
     //gets first two digits from credit card number
     while(credit >= 100)
