@@ -18,7 +18,7 @@ int main(void)
 
     if(validity == true)
     {
-        printf("VALID\n");
+        checkcard(credit);
     }
     else
     {
