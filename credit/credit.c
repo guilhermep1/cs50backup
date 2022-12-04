@@ -15,7 +15,7 @@ int main(void)
     while(credit<1);
     if(validity = true)
     {
-        
+
     }
 }
 
@@ -43,3 +43,4 @@ bool checksum(long credit)
         return false;
     }
 }
+
