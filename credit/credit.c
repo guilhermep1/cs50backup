@@ -29,7 +29,8 @@ int main(void)
 //Checksum function
 bool checksum(long credit)
 {
-    int credit2;
+    int credit2 = credit;
+    int credit1 = credit;
     int digit;
     int sum = 0;
     //reduces credit car number by 1 digit
