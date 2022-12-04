@@ -41,7 +41,7 @@ bool checksum(long credit)
         credit /= 100;
         sum += (digit * 2);
     }
-    printf("%d",sum);
+    printf("%d\n",sum);
     if(sum%10==0)
     {
         return true;
