@@ -6,14 +6,16 @@ int checkcard(long credit);
 
 int main(void)
 {
-    bool validity = false;
+    bool validity;
     long credit;
+
     do
     {
         credit = get_long("Number: ");
         validity = checksum(credit);
     }
     while(credit<1);
+    
     if(validity = true)
     {
         checkcard(credit);
@@ -51,5 +53,11 @@ bool checksum(long credit)
 
 int checkcard(long credit)
 {
-    
+    int digits;
+    //gets first two digits from credit card number
+    while(credit>=100)
+    {
+        credit/=10;
+        printf("%ld", credit);
+    }
 }
