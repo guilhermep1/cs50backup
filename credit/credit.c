@@ -5,7 +5,6 @@ bool checksum(long credit);
 
 int main(void)
 {
-    bool validity;
     long credit;
     do
     {
