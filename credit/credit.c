@@ -97,6 +97,13 @@ bool checksum(long credit)
 
 int checkcard(long credit)
 {
+
+    //checks for minimum digits
+    if(credit/10000000000000<1)
+    {
+        return false;
+    }
+
     //gets first two digits from credit card number
     while(credit >= 100)
     {
