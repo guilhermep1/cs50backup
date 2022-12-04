@@ -53,6 +53,7 @@ bool checksum(long credit)
         {
         sum1 += (digit1);
         }
+        printf("digit1: %d\n", digit1);
     }
 
     //reduces credit car number by 1 digit
@@ -74,6 +75,7 @@ bool checksum(long credit)
         {
         sum += (digit * 2);
         }
+        printf("digit: %d\n", digit);
     }
 
     //sums the two values
