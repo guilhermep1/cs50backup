@@ -82,7 +82,7 @@ bool checksum(long credit)
 
     //sums the two values
     sumall = sum + sum1;
-    printf("sumall: %d",sumall);
+    printf("sumall: %d\n",sumall);
 
     //verifies credit card validity
     if(sumall%10==0)
