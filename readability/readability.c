@@ -39,7 +39,7 @@ int count_words(string text)
     int i = 0, words = 1;
     while(text[i] != '\0')
     {
-        if(isspace(text[i]))
+        if (isspace(text[i]))
         {
             words++;
         }
@@ -52,9 +52,9 @@ int count_words(string text)
 int count_sentences(string text)
 {
     int i = 0, sentences = 0;
-    while(text[i] != '\0')
+    while (text[i] != '\0')
     {
-        if(text[i] == '.' || text[i] == '?' || text[i] == '!')
+        if (text[i] == '.' || text[i] == '?' || text[i] == '!')
         {
             sentences++;
         }
@@ -64,3 +64,4 @@ int count_sentences(string text)
 }
 
 //Calculates readability
+int readability()
