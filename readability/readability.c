@@ -26,7 +26,7 @@ int count_letters(string text)
     int letters = 0, i = 0;
     while(text[i] != '\0')
     {
-        if(text[i] == '.' || text[i] == '?' || text[i] == '!')
+        if(isalpha(text[i]))
         {
             letters++;
         }
@@ -56,7 +56,7 @@ int count_sentences(string text)
     int i = 0, sentences = 1;
     while(text[i] != '\0')
     {
-        if(ispunct(text[i]))
+        if(text[i] == '.' || text[i] == '?' || text[i] == '!')
         {
             sentences++;
         }
