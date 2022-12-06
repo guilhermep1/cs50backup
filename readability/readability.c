@@ -54,7 +54,7 @@ int count_sentences(string text)
     int i = 0, sentences = 1;
     while(text[i] != '\0')
     {
-        if(text[i] == ' ')
+        if(ispunct(text[i]))
         {
             sentences++;
         }
