@@ -60,5 +60,5 @@ int count_sentences(string text)
         }
         i++;
     }
-    return words;
+    return sentences;
 }
