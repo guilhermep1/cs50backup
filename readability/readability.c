@@ -64,4 +64,7 @@ int count_sentences(string text)
 }
 
 //Calculates readability
-int readability()
+int readability(string text)
+{
+    int 
+}
