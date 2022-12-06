@@ -2,8 +2,9 @@
 #include <stdio.h>
 #include <ctype.h>
 
-int count_letters(string sentence);
-int count_words(string sentence);
+int count_letters(string text);
+int count_words(string text);
+int count_sentences(string text);
 
 int main(void)
 {
@@ -13,12 +14,12 @@ int main(void)
 }
 
 //Counts all letters in a string
-int count_letters(string sentence)
+int count_letters(string text)
 {
     int letters = 0, i = 0;
-    while(sentence[i] != '\0')
+    while(text[i] != '\0')
     {
-        if(sentence[i] == ' ' || !isalpha(sentence[i]))
+        if(text[i] == ' ' || !isalpha(text[i]))
         {
             i++;
         }
@@ -31,17 +32,23 @@ int count_letters(string sentence)
     return letters;
 }
 
-//Counts all words in a sentence
-int count_words(string sentence)
+//Counts all words in text
+int count_words(string text)
 {
     int i = 0, words = 1;
-    while(sentence[i] != '\0')
+    while(text[i] != '\0')
     {
-        if(sentence[i] == ' ')
+        if(text[i] == ' ')
         {
             words++;
         }
         i++;
     }
     return words;
+}
+
+//Counts all sentences in text input
+int count_texts(string text)
+{
+
 }
