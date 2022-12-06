@@ -12,12 +12,29 @@ int gradelevel(string text);
 int main(void)
 {
     string text;
+    int grade;
+
     do
     {
         text = get_string("Text: ");
     }
     while (strlen(text) <= 0);
-    printf("%d letters\n%d words\n%d sentences\n", count_letters(text), count_words(text), count_sentences(text));
+
+    grade = gradelevel(text);
+
+    if (grade < 1)
+    {
+        printf("Before Grade 1\n");
+    }
+    else if (grade >= 16)
+    {
+        printf("Grade 16+");
+    }
+    else
+    {
+        printf("Grade %d\n", grade);
+    }
+
 }
 
 //Counts all letters in a string
