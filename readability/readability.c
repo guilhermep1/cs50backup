@@ -64,8 +64,8 @@ int count_sentences(string text)
     return sentences;
 }
 
-//Calculates readability
+//Calculates grade level
 int gradelevel(string text)
 {
-    int
+    int 
 }
