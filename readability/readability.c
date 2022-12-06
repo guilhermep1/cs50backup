@@ -18,7 +18,7 @@ int count_letters(string sentence)
     int letters = 0, i = 0;
     while(sentence[i] != '\0')
     {
-        if(sentence[i] == ' ')
+        if(sentence[i] == ' ' || !isalpha(sentence[i]))
         {
             i++;
         }
