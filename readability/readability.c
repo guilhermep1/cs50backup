@@ -70,6 +70,6 @@ int gradelevel(string text)
 {
     float l = (count_letters(text) / count_words(text)) * 100.00;
     float s = (count_sentences(text) / count_words(text)) * 100.00;
-    int grade = round((0.0588 * l) - (0.296 * s) - 15.8)
+    int grade = round((0.0588 * l) - (0.296 * s) - 15.8);
     return grade;
 }
