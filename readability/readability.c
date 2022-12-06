@@ -7,16 +7,24 @@ int count_letters(string text);
 int main(void)
 {
     string text = get_string("Text: ");
-    printf("%d\n",count_)
+    printf("%d\n", count_letters)
 }
 
+//A function that counts all letters in a string
 int count_letters(string text)
 {
     int letters = 0, i = 0;
     while(text[i] != "\0")
     {
-        letters++;
-        i++;
+        if(text[i] == " ")
+        {
+            i++;
+        }
+        else
+        {
+            letters++;
+            i++;
+        }
     }
     return letters;
 }
