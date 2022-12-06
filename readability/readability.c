@@ -8,7 +8,7 @@ int main(void)
 
 }
 
-float averageletters(sentence)
+int count_letters(string text)
 {
     
 }
