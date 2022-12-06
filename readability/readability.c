@@ -10,5 +10,5 @@ int main(void)
 
 float averageletters(sentence)
 {
-
+    
 }
