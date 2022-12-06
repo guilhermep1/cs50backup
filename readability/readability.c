@@ -67,5 +67,5 @@ int count_sentences(string text)
 //Calculates grade level
 int gradelevel(string text)
 {
-    int 
+    int l = count_letters(text)
 }
