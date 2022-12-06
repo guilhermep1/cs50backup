@@ -62,3 +62,5 @@ int count_sentences(string text)
     }
     return sentences;
 }
+
+//Calculates readability
