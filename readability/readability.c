@@ -8,7 +8,7 @@ int main(void)
 
 }
 
-int averageletters(sentence)
+float averageletters(sentence)
 {
     
 }
