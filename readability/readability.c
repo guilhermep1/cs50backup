@@ -15,7 +15,7 @@ int main(void)
         text = get_string("Text: ");
     }
     while(strlen(text) <= 0);
-    printf("%d letters\n%d words\n%d sentences\n", count_letters(text));
+    printf("%d letters\n%d words\n%d sentences\n", count_letters(text), count_words(text), count_sentences(text));
 }
 
 //Counts all letters in a string
