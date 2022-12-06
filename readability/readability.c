@@ -2,21 +2,23 @@
 #include <stdio.h>
 #include <string.h>
 
-int count_letters(string text);
+int count_letters(string sentence);
+int count_words(string sentence);
 
 int main(void)
 {
     string text = get_string("Text: ");
-    printf("%d\n", count_letters(text));
+    printf("%d letters\n", count_letters(text));
+    printf("%d words\n", count_words(text));
 }
 
-//A function that counts all letters in a string
-int count_letters(string text)
+//Counts all letters in a string
+int count_letters(string sentence)
 {
     int letters = 0, i = 0;
-    while(text[i] != '\0')
+    while(sentence[i] != '\0')
     {
-        if(text[i] == ' ')
+        if(sentence[i] == ' ')
         {
             i++;
         }
@@ -27,4 +29,19 @@ int count_letters(string text)
         }
     }
     return letters;
+}
+
+//Counts all words in a sentence
+int count_words(string sentence)
+{
+    int i = 0, words = 1;
+    while(sentence[i] != '\0')
+    {
+        if(sentence[i] == ' ')
+        {
+            words++;
+        }
+        i++;
+    }
+    return words;
 }
