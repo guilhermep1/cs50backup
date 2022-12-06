@@ -26,7 +26,7 @@ int count_letters(string text)
     int letters = 0, i = 0;
     while(text[i] != '\0')
     {
-        if(text[i]=="." || text[i]=="?" || text[i]=="!")
+        if(text[i] == '.' || text[i] == '?' || text[i] == '!')
         {
             letters++;
         }
