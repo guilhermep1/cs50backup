@@ -20,7 +20,7 @@ int count_letters(string text)
     int letters = 0, i = 0;
     while(text[i] != '\0')
     {
-        if(text[i] == ' ' || !isalpha(text[i]))
+        if(!isalpha(text[i]))
         {
             i++;
         }
