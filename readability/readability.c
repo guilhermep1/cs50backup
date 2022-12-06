@@ -32,7 +32,7 @@ int count_letters(string text)
     return letters;
 }
 
-//Counts all words in text
+//Counts all words in a string
 int count_words(string text)
 {
     int i = 0, words = 1;
@@ -47,8 +47,8 @@ int count_words(string text)
     return words;
 }
 
-//Counts all sentences in text input
-int count_texts(string text)
+//Counts all sentences in a string
+int count_sentences(string text)
 {
-
+    
 }
