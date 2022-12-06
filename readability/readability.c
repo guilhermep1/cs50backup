@@ -9,5 +9,5 @@ int main(void)
 
 int count_letters(string text)
 {
-    int count;
+    int letters = 0;
 }
