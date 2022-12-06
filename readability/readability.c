@@ -7,6 +7,7 @@
 int count_letters(string text);
 int count_words(string text);
 int count_sentences(string text);
+int gradelevel(string text);
 
 int main(void)
 {
@@ -67,5 +68,8 @@ int count_sentences(string text)
 //Calculates grade level
 int gradelevel(string text)
 {
-    float l = count_letters(text) /
+    float l = (count_letters(text) / count_words(text)) * 100.00;
+    float s = (count_sentences(text) / count_words(text)) * 100.00;
+
+    int grade = 
 }
