@@ -16,7 +16,7 @@ int main(void)
 
     do
     {
-        text = "Harry Potter was a highly unusual boy in many ways. For one thing, he hated the summer holidays more than any other time of year. For another, he really wanted to do his homework, but was forced to do it in secret, in the dead of the night. And he also happened to be a wizard.";
+        text = get_string("Text: ");
     }
     while (strlen(text) <= 0);
 
@@ -85,11 +85,11 @@ int count_sentences(string text)
 //Calculates grade level
 int gradelevel(string text)
 {
-    float l = (count_letters(text) / count_words(text)) * 100.00;
-    printf("l = %f\n", l);
-    float s = (count_sentences(text) / count_words(text)) * 100.00;
-    printf("Sentences: %d\nWords: %d\n", count_sentences(text))
-    printf("s = %f\n", s);
+    float letters = count_letters(text) * 1.0;
+    float words = count_words(text) * 1.0;
+    float sentences = count_sentences(text) * 1.0;
+    float l = (letters / words) * 100.00;
+    float s = (sentences / words) * 100.00;
     int grade = round((0.0588 * l) - (0.296 * s) - 15.8);
     return grade;
 }
