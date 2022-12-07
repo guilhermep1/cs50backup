@@ -30,7 +30,7 @@ int main(void)
     }
     else if (grade >= 16)
     {
-        printf("Grade 16+");
+        printf("Grade 16+\n");
     }
     else
     {
