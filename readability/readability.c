@@ -14,6 +14,7 @@ int main(void)
     string text;
     int grade;
 
+    //Gets user input while string is empty
     do
     {
         text = get_string("Text: ");
@@ -22,6 +23,7 @@ int main(void)
 
     grade = gradelevel(text);
 
+    //In case of senior level grade or lower than grade 1, doesn't print out the value of grade
     if (grade < 1)
     {
         printf("Before Grade 1\n");
@@ -90,9 +92,10 @@ int gradelevel(string text)
     float words = count_words(text) * 1.0;
     float sentences = count_sentences(text) * 1.0;
 
-    //Formula
+    //Formula for Coleman-Liau index
     float l = (letters / words) * 100.00;
     float s = (sentences / words) * 100.00;
     int grade = round((0.0588 * l) - (0.296 * s) - 15.8);
+
     return grade;
 }
