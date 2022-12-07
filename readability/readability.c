@@ -16,7 +16,7 @@ int main(void)
 
     do
     {
-        text = get_string("Text: ");
+        text = "get_string("Text: ")";
     }
     while (strlen(text) <= 0);
 
