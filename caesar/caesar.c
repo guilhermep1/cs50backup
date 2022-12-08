@@ -3,6 +3,8 @@
 #include <stdio.h>
 #include <string.h>
 
+string encrypt(string plaintext)
+
 int main(int argc, string argv[])
 {
     //passing argument as variable
@@ -10,9 +12,11 @@ int main(int argc, string argv[])
     //Making sure user input is correct
     if(argc == 2 && key > 0)
     {
-        //Execute normally
-        //Encryption algorithm
-        
+        //reads user input
+        string plaintext = get_string("plaintext: ");
+        //calls encryption algorithm
+        string ciphertext = encrypt(plaintext);
+        printf("ciphertext: %s\n", ciphertext);
         return 0;
     }
     else
