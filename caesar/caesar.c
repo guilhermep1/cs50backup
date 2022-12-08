@@ -3,8 +3,10 @@
 
 int main(int argc, string argv[])
 {
-    if(argc > 1)
+    //Making sure user input is correct
+    if(argc == 1)
     {
+        //Execute normally
         
     }
 }
