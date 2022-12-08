@@ -41,5 +41,6 @@ string encrypt(string plaintext, int key)
         {
             ciphertext[i] = plaintext[i];
         }
+        i++;
     }
 }
