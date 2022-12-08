@@ -6,7 +6,7 @@
 
 int main(int argc, string argv[])
 {
-    printf("%d\n%s\n", argc, argv[0]);
+    printf("%d\n%s\n", argc, argv[1]);
     //passing argument as variable
     int key = atoi(argv[1]);
     //Making sure user input is correct
@@ -18,7 +18,7 @@ int main(int argc, string argv[])
     }
     else
     {
-        printf("error\n");
+        printf("Usage: ./caesar key\n");
         return 1;
     }
 }
