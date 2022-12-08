@@ -8,13 +8,15 @@ int main(int argc, string argv[])
     //passing argument as variable
     int key = atoi(argv[1]);
     //Making sure user input is correct
-    if(argc == 1 && isalnum(key) && argv[0] > 0)
+    if(argc == 1 && isalnum(key) && key > 0)
     {
         //Execute normally
+        printf("key: %d\n", key);
         return 0;
     }
     else
     {
+        printf("error");
         return 1;
     }
 }
