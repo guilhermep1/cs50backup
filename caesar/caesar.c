@@ -25,11 +25,21 @@ int main(int argc, string argv[])
     return 1;
 }
 
+//encryption algorithm
 string encrypt(string plaintext, int key)
 {
     int i = 0;
+    string ciphertext;
+
     while (plaintext[i] != "\0")
     {
-        if ()
+        if (isalpha(plaintext[i]))
+        {
+            ciphertext[i] = (plaintext[i] + key) % 26;
+        }
+        else
+        {
+            ciphertext[i] = plaintext[i];
+        }
     }
 }
