@@ -52,11 +52,14 @@ char rotate(char c, int n)
     char newchar;
     if (isalpha(c))
     {
-        while(n > 26)
+        if(n > 26)
         {
-            n-=26;
+            newchar = (char) (c + n) % 26;
         }
-        newchar = (char) c + n;
+        else
+        {
+            newchar = (char) c + n;
+        }
         return newchar;
     }
     else
