@@ -37,7 +37,7 @@ int main(int argc, string argv[])
 //checking if user input contains only digits
 bool only_digits(string input)
 {
-    for(int i = 0; i < strlen(input); i++)
+    for (int i = 0; i < strlen(input); i++)
     {
         if (!isdigit(input[i]))
         {
@@ -47,6 +47,7 @@ bool only_digits(string input)
     return true;
 }
 
+//encrypts char
 char rotate(char c, int n)
 {
     char newchar;
