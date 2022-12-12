@@ -50,7 +50,7 @@ char rotate(char c, int n)
     char newchar;
     if (isalpha(c))
     {
-        if(c > 26)
+        if(n > 26)
         {
             newchar = (char) (c + n) % 26;
         }
