@@ -21,7 +21,8 @@ int main(int argc, string argv[])
             //calls encryption algorithm
             for (int i = 0; i < strlen(plaintext); i++)
             {
-                printf("%c", rotate(plaintext[i], key));
+                char cipher = rotate(plaintext[i], key);
+                printf("%c", cipher);
             }
             return 0;
         }
