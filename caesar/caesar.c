@@ -19,7 +19,7 @@ int main(int argc, string argv[])
             //reads user input
             string plaintext = get_string("plaintext: ");
             //calls encryption algorithm
-            for (int i = 0; i <= strlen(plaintext); i++)
+            for (int i = 0; i < strlen(plaintext); i++)
             {
                 printf("%c", rotate(plaintext[i], key));
             }
