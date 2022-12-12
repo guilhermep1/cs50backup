@@ -19,6 +19,7 @@ int main(int argc, string argv[])
             //reads user input
             string plaintext = get_string("plaintext: ");
             //calls encryption algorithm
+            printf("ciphertext: ");
             for (int i = 0; i < strlen(plaintext); i++)
             {
                 char cipher = rotate(plaintext[i], key);
