@@ -4,43 +4,63 @@
 #include <string.h>
 #include <ctype.h>
 
-string encrypt(string plaintext, int key);
+bool only_digits(string input);
+char rotate(char c, int n);
 
 int main(int argc, string argv[])
 {
-    //passing argument as variable
-    int key = atoi(argv[1]);
-    //Making sure user input is correct
-    if(argc == 2 && key > 0)
+    //checking if user has entered the correct number of arguments
+    if (argc == 2)
     {
-        //reads user input
-        string plaintext = get_string("plaintext: ");
-        //calls encryption algorithm
-        string ciphertext = encrypt(plaintext, key);
-        printf("ciphertext: %s\n", ciphertext);
-        return 0;
+        if (only_digits(argv[1]))
+        {
+            //passing argument as variable
+            int key = atoi(argv[1]);
+            //reads user input
+            string plaintext = get_string("plaintext: ");
+            //calls encryption algorithm
+            for (int i = 0; i <= strlen(plaintext); i++)
+            {
+                printf("%c", rotate(plaintext[i], key));
+            }
+            return 0;
+        }
     }
-
+    //Making sure user input is correct
     printf("Usage: ./caesar key\n");
     return 1;
 }
 
-//encryption algorithm
-string encrypt(string plaintext, int key)
+//checking if user input contains only digits
+bool only_digits(string input)
 {
-    int i = 0;
-    string ciphertext;
-
-    while (plaintext[i] != "\0")
+    for(int i = 0; i < strlen(input); i++)
     {
-        if (isalpha(plaintext[i]))
+        if (!isdigit(input[i]))
         {
-            ciphertext[i] = (plaintext[i] + key) % 26;
+            return false;
+        }
+    }
+    return true;
+}
+
+char rotate(char c, int n)
+{
+    char newchar;
+    if (isalpha(c))
+    {
+        if(c > 26)
+        {
+            newchar = (char) (c + n) % 26;
         }
         else
         {
-            ciphertext[i] = plaintext[i];
+            newchar = (char) c + n;
         }
-        i++;
+        return newchar;
+    }
+    else
+    {
+        return c;
     }
 }
