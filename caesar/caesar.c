@@ -52,8 +52,14 @@ char rotate(char c, int n)
     char newchar;
     if (isalpha(c))
     {
-        newchar = (char) ((c - 65) + n) % 26 + 65;
-        return newchar;
+        if (isupper(c))
+        {
+            return ((c - 'A' + n) % 26) + 'A';
+        }
+        else if (islower(c))
+        {
+            return ((c - 'a' + n) % 26) + 'a';
+        }
     }
     else
     {
