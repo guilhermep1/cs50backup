@@ -33,5 +33,9 @@ int main(void)
 int compute_score(string word)
 {
     // TODO: Compute and return score for string
-    if(isupper())
+    int i = 0;
+    while(word[i] != '\0')
+    {
+        
+    }
 }
