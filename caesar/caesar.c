@@ -52,7 +52,7 @@ char rotate(char c, int n)
     char newchar;
     if (isalpha(c))
     {
-        newchar = (char) (c + n;
+        newchar = (char) ((c - 65) + n) % 26 + 65;
         return newchar;
     }
     else
