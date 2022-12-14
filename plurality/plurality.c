@@ -68,6 +68,7 @@ bool vote(string name)
 {
     for (int i = 0; i < candidate_count; i++)
     {
+        printf("%s: %d\n", candidates[i].name, candidates[i].votes);
         if(candidates[i].name == name)
         {
             candidates[i].votes += 1;
