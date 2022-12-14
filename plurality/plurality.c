@@ -68,7 +68,7 @@ bool vote(string name)
 {
     for (int i = 0; i < candidate_count; i++)
     {
-        if(strcmp(candidates[i].name, name) == 0)
+        if (strcmp(candidates[i].name, name) == 0)
         {
             candidates[i].votes += 1;
             return true;
@@ -84,7 +84,7 @@ void print_winner(void)
 
     for (int i = 0; i < candidate_count; i++)
     {
-        if(candidates[i].votes > votes_highest)
+        if (candidates[i].votes > votes_highest)
         {
             votes_highest = candidates[i].votes;
         }
@@ -92,7 +92,7 @@ void print_winner(void)
 
     for (int i = 0; i < candidate_count; i++)
     {
-        if(candidates[i].votes == votes_highest)
+        if (candidates[i].votes == votes_highest)
         {
             printf("%s\n", candidates[i].name);
         }
