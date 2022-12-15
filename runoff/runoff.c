@@ -146,9 +146,9 @@ void tabulate(void)
     {
         for (int j = 0; j < candidate_count; j++)
         {
-            if(candidates[j].eliminated == false)
+            if(candidates[j].eliminated == false && strcmp(candidates[j].name, ))
             {
-                
+
             }
         }
     }
