@@ -153,13 +153,6 @@ void tabulate(void)
                 candidates[preference].votes++;
                 break;
             }
-
-            // if (!candidates[preferences[i][j]].eliminated &&
-            // strcmp(candidates[j].name, candidates[preferences[i][j]].name) == 0)
-            // {
-            //     candidates[j].votes++;
-            //     break;
-            // }
         }
     }
     return;
