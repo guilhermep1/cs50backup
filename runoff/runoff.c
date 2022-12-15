@@ -163,13 +163,16 @@ bool print_winner(void)
     //get total votes
     for(int i = 0; i < candidate_count; i++)
     {
-        total_votes
+        total_votes += candidates[i].votes;
     }
 
     //print winner
     for(int i = 0; i < candidate_count; i++)
     {
-        if
+        if(candidates[i].votes > total_votes / 2)
+        {
+            
+        }
     }
     return false;
 }
