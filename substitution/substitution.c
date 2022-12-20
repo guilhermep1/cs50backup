@@ -10,14 +10,14 @@ int main(int argc, string argv[])
     if (argc == 2)
     {
         string key = argv[1];
-        if(strlen(key) != 26)
+        if(strlen(key) != 26 || !isalpha(key))
         {
             printf("Key must contian 26 characters.\n");
             return 1;
         }
         else
         {
-
+            
         }
     }
     else
