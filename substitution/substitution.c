@@ -10,7 +10,7 @@ int main(int argc, string argv[])
     if (argc == 2)
     {
         string key = argv[1];
-        if(strlen(key) != 26 || !isalpha(key))
+        if (strlen(key) != 26 || !isalpha(key))
         {
             printf("Key must contain 26 alphabetic characters.\n");
             return 1;
@@ -31,5 +31,5 @@ int main(int argc, string argv[])
 
 string encrypt(string plaintext, string key)
 {
-    
+    for (int i = 0; i < strlen(plaintext))
 }
