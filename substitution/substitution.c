@@ -20,5 +20,5 @@ int main(int argc, string argv[])
 
 string encrypt(string plaintext, string key)
 {
-
+    
 }
