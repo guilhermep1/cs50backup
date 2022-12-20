@@ -9,7 +9,14 @@ int main(int argc, string argv[])
     {
         string key = argv[1];
         if(strlen(key) != 26)
-
+        {
+            printf("Key must contian 26 characters.\n");
+            return 1;
+        }
+        else
+        {
+            
+        }
     }
     else
     {
@@ -20,5 +27,5 @@ int main(int argc, string argv[])
 
 string encrypt(string plaintext, string key)
 {
-    
+
 }
