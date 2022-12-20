@@ -10,5 +10,6 @@ int main(int argc, string argv[])
     else
     {
         printf("Usage: ./substitution key\n");
+        return 1;
     }
 }
