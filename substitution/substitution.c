@@ -44,8 +44,12 @@ bool checkrepeat(string key)
                 j++;
             }
             if (key[i] == tolower(key[j]) || key[i] == toupper(key[j]))
+            {
+                return true;
+            }
         }
     }
+    return false;
 }
 
 //checks if all characters are alphabetical
