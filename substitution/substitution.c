@@ -79,12 +79,12 @@ void encrypt(char plaintext, string key)
         if (isupper(plaintext))
         {
             int letter = plaintext - 'A';
-            printf("%c", key[letter]);
+            printf("%c", toupper(key[letter]));
         }
         else
         {
             int letter = plaintext - 'a';
-            printf("%c", key[letter]);
+            printf("%c", tolower(key[letter]));
         }
     }
     else
