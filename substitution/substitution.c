@@ -19,7 +19,7 @@ int main(int argc, string argv[])
         }
         else
         {
-            printf("Key must contain 26 alphabetic characters.\n");
+            printf("Key must contain 26 different alphabetic characters.\n");
             return 1;
         }
     }
