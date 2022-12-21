@@ -43,6 +43,7 @@ bool checkrepeat(string key)
 {
     for (int i = 0; i < strlen(key); i++)
     {
+        //inner loop goes through the array skipping key[i]
         for (int j = 0; j < strlen(key); j++)
         {
             if (j == i)
