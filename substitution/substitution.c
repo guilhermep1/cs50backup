@@ -38,11 +38,8 @@ bool checkalpha(string key)
         {
             return false;
         }
-        else
-        {
-            return true;
-        }
     }
+    return true;
 }
 
 string encrypt(string plaintext, string key)
