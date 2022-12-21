@@ -74,24 +74,21 @@ bool checkalpha(string key)
 //encrypts text
 void encrypt(char plaintext, string key)
 {
-    for (int i = 0; i < strlen(plaintext); i++)
+    if (isalpha(plaintext))
     {
-        if (isalpha(plaintext))
+        if (isupper(plaintext))
         {
-            if (isupper(plaintext))
-            {
-                int letter = plaintext[i] - 'A';
-                printf("%c", key[letter]);
-            }
-            else
-            {
-                int letter = plaintext[i] - 'a';
-                printf("%c", key[letter]);
-            }
+            int letter = plaintext - 'A';
+            printf("%c", key[letter]);
         }
         else
         {
-            printf("%c", plaintext);
+            int letter = plaintext - 'a';
+            printf("%c", key[letter]);
         }
+    }
+    else
+    {
+        printf("%c", plaintext);
     }
 }
