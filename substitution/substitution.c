@@ -12,6 +12,7 @@ int main(int argc, string argv[])
     if (argc == 2)
     {
         string key = argv[1];
+        //handling key length, character type & repetition
         if (strlen(key) == 26 && checkalpha(key) && !checkrepeat(key))
         {
             string plaintext = get_string("plaintext: ");
@@ -38,7 +39,11 @@ bool checkrepeat(string key)
     {
         for(int j = 0; j < strlen(key); j++)
         {
-            if (key[i] == )
+            if (j == i)
+            {
+                j++;
+            }
+            if (key[i] == tolower(key[j]) || key[i] == toupper(key[j]))
         }
     }
 }
