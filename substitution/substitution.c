@@ -26,12 +26,14 @@ int main(int argc, string argv[])
             printf("\n");
             return 0;
         }
+        //message displayed if key is not in the correct format
         else
         {
             printf("Key must contain 26 different alphabetic characters.\n");
             return 1;
         }
     }
+    //message displayed if the main function is initialized with more or less than one argument
     else
     {
         printf("Usage: ./substitution key\n");
