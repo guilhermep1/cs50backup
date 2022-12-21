@@ -72,7 +72,17 @@ string encrypt(string plaintext, string key)
 
     for (int i = 0; i < strlen(plaintext); i++)
     {
-        
+        if (isalpha(plaintext[i]))
+        {
+            if (isupper(plaintext[i]))
+            {
+                ciphertext[i] = 
+            }
+        }
+        else
+        {
+            ciphertext[i] = plaintext[i];
+        }
     }
 
     return ciphertext;
