@@ -20,8 +20,9 @@ int main(int argc, string argv[])
             printf("ciphertext: ");
             for(int i = 0; i < strlen(plaintext); i++)
             {
-                encrypt(plaintext[i], key)
+                encrypt(plaintext[i], key);
             }
+            printf("\n");
             return 0;
         }
         else
@@ -73,26 +74,24 @@ bool checkalpha(string key)
 //encrypts text
 void encrypt(char plaintext, string key)
 {
-    string ciphertext = "";
-
     for (int i = 0; i < strlen(plaintext); i++)
     {
-        if (isalpha(plaintext[i]))
+        if (isalpha(plaintext))
         {
-            if (isupper(plaintext[i]))
+            if (isupper(plaintext))
             {
                 int letter = plaintext[i] - 'A';
-                ciphertext[i] = key[letter];
+                printf("%c", key[letter]);
             }
             else
             {
                 int letter = plaintext[i] - 'a';
-                ciphertext[i] = key[letter];
+                printf("%c", key[letter]);
             }
         }
         else
         {
-            ciphertext[i] = plaintext[i];
+            printf("%c", plaintext);
         }
     }
 }
