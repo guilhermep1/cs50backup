@@ -30,6 +30,7 @@ int main(int argc, string argv[])
     }
 }
 
+//checks if all characters are alphabetical
 bool checkalpha(string key)
 {
     for(int i = 0; i < strlen(key); i++)
@@ -42,6 +43,7 @@ bool checkalpha(string key)
     return true;
 }
 
+//encrypts text
 string encrypt(string plaintext, string key)
 {
     string ciphertext = "";
