@@ -9,6 +9,7 @@ void encrypt(char plaintext, string key);
 
 int main(int argc, string argv[])
 {
+    //checks if the user has inputed the correct number of arguments
     if (argc == 2)
     {
         string key = argv[1];
