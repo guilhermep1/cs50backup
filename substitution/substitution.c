@@ -5,7 +5,7 @@
 
 bool checkrepeat(string key);
 bool checkalpha(string key);
-string encrypt(string plaintext, string key);
+void encrypt(char plaintext, string key);
 
 int main(int argc, string argv[])
 {
@@ -16,7 +16,12 @@ int main(int argc, string argv[])
         if (strlen(key) == 26 && checkalpha(key) && !checkrepeat(key))
         {
             string plaintext = get_string("plaintext: ");
-            printf("ciphertext: %s\n", encrypt(plaintext, key));
+            //printing ciphertext
+            printf("ciphertext: ");
+            for(int i = 0; i < strlen(plaintext); i++)
+            {
+                encrypt(plaintext[i], key)
+            }
             return 0;
         }
         else
@@ -66,7 +71,7 @@ bool checkalpha(string key)
 }
 
 //encrypts text
-string encrypt(string plaintext, string key)
+void encrypt(char plaintext, string key)
 {
     string ciphertext = "";
 
@@ -90,6 +95,4 @@ string encrypt(string plaintext, string key)
             ciphertext[i] = plaintext[i];
         }
     }
-
-    return ciphertext;
 }
