@@ -76,11 +76,11 @@ string encrypt(string plaintext, string key)
         {
             if (isupper(plaintext[i]))
             {
-                ciphertext[i] = key[ plaintext[i] - 65 ];
+                ciphertext[i] = key[ plaintext[i] - 'A' ];
             }
             else
             {
-                ciphertext[i] = key[ plaintext[i] - 97 ];
+                ciphertext[i] = key[ plaintext[i] - 'a' ];
             }
         }
         else
