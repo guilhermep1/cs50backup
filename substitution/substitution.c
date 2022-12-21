@@ -72,9 +72,7 @@ string encrypt(string plaintext, string key)
 
     for (int i = 0; i < strlen(plaintext); i++)
     {
-        char currentchar = plaintext[i];
-        ciphertext[i] = key[(int) currentchar];
-        printf("%s\n", ciphertext);
+        
     }
 
     return ciphertext;
