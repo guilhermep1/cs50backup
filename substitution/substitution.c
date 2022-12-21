@@ -77,7 +77,7 @@ void encrypt(char plaintext, string key)
     //checking if character is alphabetic
     if (isalpha(plaintext))
     {
-        //checking if character is in upper
+        //checking if character is uppercase or lowercase
         if (isupper(plaintext))
         {
             int letter = plaintext - 'A';
