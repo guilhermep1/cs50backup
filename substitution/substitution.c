@@ -44,12 +44,12 @@ bool checkalpha(string key)
 
 string encrypt(string plaintext, string key)
 {
-    string ciphertext;
+    string ciphertext = "";
 
     for (int i = 0; i < strlen(plaintext); i++)
     {
         char currentchar = plaintext[i];
-        ciphertext[i] = key[currentchar];
+        ciphertext[i] = key[(int) currentchar];
         printf("%s\n", ciphertext);
     }
 
