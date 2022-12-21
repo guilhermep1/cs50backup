@@ -74,8 +74,10 @@ bool checkalpha(string key)
 //encrypts text
 void encrypt(char plaintext, string key)
 {
+    //checking if character is alphabetic
     if (isalpha(plaintext))
     {
+        //checking if character is in upper
         if (isupper(plaintext))
         {
             int letter = plaintext - 'A';
