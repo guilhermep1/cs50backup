@@ -3,6 +3,7 @@
 #include <string.h>
 #include <ctype.h>
 
+bool checkrepeat(string key);
 bool checkalpha(string key);
 string encrypt(string plaintext, string key);
 
@@ -11,7 +12,7 @@ int main(int argc, string argv[])
     if (argc == 2)
     {
         string key = argv[1];
-        if (strlen(key) == 26 && checkalpha(key))
+        if (strlen(key) == 26 && checkalpha(key) && !checkrepeat(key))
         {
             string plaintext = get_string("plaintext: ");
             printf("ciphertext: %s\n", encrypt(plaintext, key));
@@ -30,10 +31,22 @@ int main(int argc, string argv[])
     }
 }
 
+//checks for repeated characters
+bool checkrepeat(string key)
+{
+    for (int i = 0; i < strlen(key); i++)
+    {
+        for(int j = 0; j < strlen(key); j++)
+        {
+            if (key[i] == )
+        }
+    }
+}
+
 //checks if all characters are alphabetical
 bool checkalpha(string key)
 {
-    for(int i = 0; i < strlen(key); i++)
+    for (int i = 0; i < strlen(key); i++)
     {
         if (!isalpha(key[i]))
         {
