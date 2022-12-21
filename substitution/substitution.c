@@ -3,6 +3,7 @@
 #include <string.h>
 #include <ctype.h>
 
+bool checkalpha(string key);
 string encrypt(string plaintext, string key);
 
 int main(int argc, string argv[])
@@ -10,7 +11,7 @@ int main(int argc, string argv[])
     if (argc == 2)
     {
         string key = argv[1];
-        if (strlen(key) == 26 && isalpha(key))
+        if (strlen(key) == 26 && checkalpha(key))
         {
             string plaintext = get_string("plaintext: ");
             printf("ciphertext: %s\n", encrypt(plaintext, key));
@@ -26,6 +27,21 @@ int main(int argc, string argv[])
     {
         printf("Usage: ./substitution key\n");
         return 1;
+    }
+}
+
+bool checkalpha(string key)
+{
+    for(int i = 0; i < strlen(key); i++)
+    {
+        if (!isalpha(key[i]))
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
     }
 }
 
