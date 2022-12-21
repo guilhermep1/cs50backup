@@ -18,7 +18,7 @@ int main(int argc, string argv[])
             string plaintext = get_string("plaintext: ");
             //printing ciphertext
             printf("ciphertext: ");
-            for(int i = 0; i < strlen(plaintext); i++)
+            for (int i = 0; i < strlen(plaintext); i++)
             {
                 encrypt(plaintext[i], key);
             }
@@ -43,7 +43,7 @@ bool checkrepeat(string key)
 {
     for (int i = 0; i < strlen(key); i++)
     {
-        for(int j = 0; j < strlen(key); j++)
+        for (int j = 0; j < strlen(key); j++)
         {
             if (j == i)
             {
