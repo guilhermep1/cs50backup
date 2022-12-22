@@ -106,7 +106,10 @@ bool vote(int rank, string name, int ranks[])
         {
             for (int j = 0; j < rank; j++)
             {
-                if (ranks[j] == )
+                if (ranks[j] == name)
+                {
+                    return false;
+                }
             }
             ranks[rank] = name;
             return true;
