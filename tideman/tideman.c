@@ -161,7 +161,10 @@ void sort_pairs(void)
         int strongest = i;
         for(int j = 0; j < pair_count; j++)
         {
-            if (preferences[pairs[i].winner] >)
+            if (preferences[pairs[i].winner][pairs[i].loser] <> preferences[pairs[j].winner][pairs[j].loser])
+            {
+                strongest =
+            }
         }
     }
     return;
