@@ -169,7 +169,10 @@ void sort_pairs(void)
         sorted[i] = pairs[strongest];
     }
 
-
+    for (int i = 0; i < pair_count; i++)
+    {
+        pairs[i] = sorted[i];
+    }
 
     return;
 }
