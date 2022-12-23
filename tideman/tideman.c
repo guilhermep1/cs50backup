@@ -175,6 +175,13 @@ void sort_pairs(void)
         pairs[i] = sorted[i];
     }
 
+    printf("sorted:\n");
+
+    for (int i = 0; i < pair_count; i++)
+    {
+        printf("winner: %i loser: %i\n\n", pairs[i].winner, pairs[i].loser);
+    }
+
     return;
 }
 
