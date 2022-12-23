@@ -140,7 +140,10 @@ void add_pairs(void)
     {
         for (int j = 0; j < candidate_count; j++)
         {
-            if (preferences[i][j] > )
+            if (preferences[i][j] > 0)
+            {
+                pairs
+            }
         }
     }
     return;
