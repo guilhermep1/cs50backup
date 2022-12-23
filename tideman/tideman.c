@@ -144,6 +144,7 @@ void add_pairs(void)
             {
                 pairs[i].winner = i;
                 pairs[i].loser = j;
+                pair_count++;
             }
         }
     }
@@ -153,7 +154,8 @@ void add_pairs(void)
 // Sort pairs in decreasing order by strength of victory
 void sort_pairs(void)
 {
-    // TODO
+    int strongest;
+    for (int i = 0; )
     return;
 }
 
