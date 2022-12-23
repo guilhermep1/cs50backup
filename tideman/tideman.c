@@ -142,7 +142,7 @@ void add_pairs(void)
         {
             if (preferences[i][j] > 0)
             {
-                pairs
+                pairs[]
             }
         }
     }
