@@ -176,6 +176,7 @@ void sort_pairs(void)
     }
 
     printf("sorted:\n");
+    printf("pair count: %i\n", pair_count);
 
     for (int i = 0; i < pair_count; i++)
     {
