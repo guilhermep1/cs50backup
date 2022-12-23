@@ -155,7 +155,10 @@ void add_pairs(void)
 void sort_pairs(void)
 {
     int strongest;
-    for (int i = 0; )
+    for (int i = 0; i < pair_count; i++)
+    {
+        
+    }
     return;
 }
 
