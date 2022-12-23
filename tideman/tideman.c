@@ -168,6 +168,9 @@ void sort_pairs(void)
         }
         sorted[i] = pairs[strongest];
     }
+
+
+
     return;
 }
 
