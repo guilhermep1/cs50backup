@@ -149,7 +149,6 @@ void add_pairs(void)
                 printf("pair %i: winner: %i loser: %i\n", pair_count, pairs[pair_count].winner, pairs[pair_count].loser);
                 pair_count++;
                 printf("pair count: %i\n", pair_count);
-                break;
             }
         }
     }
