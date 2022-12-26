@@ -201,11 +201,6 @@ void lock_pairs(void)
 
                 if (pairs[k].winner == i && pairs[k].loser == j)
                 {
-                    if(k == pair_count - 1)
-                    {
-                        
-                    }
-
                     locked[i][j] = true;
                 }
             }
