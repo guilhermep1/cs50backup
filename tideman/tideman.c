@@ -131,13 +131,15 @@ void record_preferences(int ranks[])
             }
         }
     }
-    for (int i = 0; i < candidate_count; i++)
+
+     for (int i = 0; i < candidate_count; i++)
     {
         for (int j = 0; j < candidate_count; j++)
         {
-            printf("%s over %s: %i\n" candidates[])
+            printf("%s over %s: %i\n", candidates[i], candidates[j], preferences[i][j]);
         }
     }
+
     return;
 }
 
@@ -153,7 +155,9 @@ void add_pairs(void)
             {
                 pairs[pair_count].winner = i;
                 pairs[pair_count].loser = j;
+                printf("pair %i: winner: %i loser: %i\n", pair_count, pairs[pair_count].winner, pairs[pair_count].loser);
                 pair_count++;
+                printf("pair count: %i\n", pair_count);
             }
         }
     }
@@ -181,6 +185,14 @@ void sort_pairs(void)
     for (int i = 0; i < pair_count; i++)
     {
         pairs[i] = sorted[i];
+    }
+
+    printf("sorted:\n");
+    // printf("pair count: %i\n", pair_count);
+
+    for (int i = 0; i < pair_count; i++)
+    {
+        printf("winner: %i loser: %i\n\n", pairs[i].winner, pairs[i].loser);
     }
 
     return;
