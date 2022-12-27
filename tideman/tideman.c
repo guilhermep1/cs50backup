@@ -157,11 +157,9 @@ void add_pairs(void)
 // Sort pairs in decreasing order by strength of victory
 void sort_pairs(void)
 {
-    pair sorted[pair_count];
-
     for (int i = 0; i < pair_count; i++)
     {
-        int replace;
+        pair replace;
         int strongest = i;
         for(int j = i + 1; j < pair_count; j++)
         {
@@ -177,11 +175,6 @@ void sort_pairs(void)
             pairs[i] = pairs[strongest];
             pairs[strongest] = replace;
         }
-    }
-
-    for (int i = 0; i < pair_count; i++)
-    {
-        pairs[i] = sorted[i];
     }
 
     return;
