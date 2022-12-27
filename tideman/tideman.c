@@ -220,7 +220,7 @@ bool check_cycle(int n, int m)
     {
         if (locked[i][n] == true)
             {
-            return check_cycle(i, b);
+            return check_cycle(i, m);
         }
     }
     return false;
