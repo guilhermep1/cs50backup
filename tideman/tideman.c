@@ -203,17 +203,12 @@ void lock_pairs(void)
 bool check_cycle(int pairindex)
 {
     int goesto;
-    int i = 0;
 
-    for (i = 0; i < pair_count; i++)
+    for (int i = 0; i < pair_count; i++)
     {
-        if (goesto == pairindex)
+        for (int j = 0; j < pair_count; j++)
         {
-            return false;
-        }
-        if (locked[pairindex][i] == true)
-        {
-            goesto = i;
+
         }
     }
 
