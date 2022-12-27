@@ -204,7 +204,7 @@ void lock_pairs(void)
 bool cycle(int pairindex)
 {
     int currentpos = pairs[pairindex].loser;
-
+    printf("first value of currentpos: %i\n", currentpos);
     for (int i = 0; i < pair_count; i++)
     {
         for (int j = 0; j < pair_count; j++)
@@ -212,13 +212,16 @@ bool cycle(int pairindex)
             if(locked[currentpos][j] == true)
             {
                 currentpos = j;
+                printf("currentpos: %i\n", currentpos);
             }
         }
         if(currentpos == pairindex)
         {
+            printf("cycle\n");
             return true;
         }
     }
+    printf("no cycle\n");
 
     return false;
 }
