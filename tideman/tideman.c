@@ -220,10 +220,11 @@ void print_winner(void)
         int j = 0;
         while (j < candidate_count)
         {
-            if(locked[j][i] == false)
+            if(locked[j][i] == true)
             {
-                
+                break;
             }
+            source = j;
         }
     }
 
