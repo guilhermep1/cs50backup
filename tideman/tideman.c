@@ -217,7 +217,7 @@ bool cycle(int pairindex)
         }
         if(currentpos == pairindex)
         {
-            printf("cycle\n");
+            printf("cycle at pair [%i]\n", pairindex);
             return true;
         }
     }
