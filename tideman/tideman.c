@@ -207,6 +207,10 @@ bool check_cycle(int pairindex)
 
     for (i = 0; i < pair_count; i++)
     {
+        if (goesto == pairindex)
+        {
+            return false;
+        }
         if (locked[pairindex][i] == true)
         {
             goesto = i;
