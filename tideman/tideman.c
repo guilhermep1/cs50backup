@@ -202,17 +202,11 @@ void lock_pairs(void)
 //Checks if locking a pair creates a cycle
 bool cycle(int pairindex)
 {
-    int goesto;
+    int currentpos = pairs[pairindex].loser;
 
     for (int i = 0; i < pair_count; i++)
     {
-        for (int j = 0; j < pair_count; j++)
-        {
-            if (locked[i][j])
-            {
-                goesto = j;
-            }
-        }
+        
     }
 
     return false;
