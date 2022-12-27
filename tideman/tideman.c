@@ -204,6 +204,7 @@ bool check_cycle(int pairindex)
 {
     int goesto;
     int i = 0;
+    int start = pairs[pairindex].loser;
 
     while (i < pair_count)
     {
