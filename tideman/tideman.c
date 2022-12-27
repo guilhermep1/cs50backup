@@ -205,10 +205,12 @@ bool check_cycle(int pairindex)
     int goesto;
     int i = 0;
 
-    while (i < pair_count)
+    for (i = 0; i < pair_count; i++)
     {
-        if(locked[])
-        break;
+        if (locked[pairindex][i] == true)
+        {
+            
+        }
     }
 
     return false;
