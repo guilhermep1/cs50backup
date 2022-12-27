@@ -218,7 +218,7 @@ void print_winner(void)
             j++;
         }
     }
-    printf("source: %i\n", candidates[source]);
+    printf("source: %i\n", source);
     printf("%s\n", candidates[source]);
 
     return;
