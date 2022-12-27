@@ -189,7 +189,7 @@ void lock_pairs(void)
         {
             for (int k = 0; k < pair_count; k++)
             {
-                if (pairs[k].winner == i && pairs[k].loser == j)
+                if (pairs[k].winner == i && pairs[k].loser == j && )
                 {
                     locked[i][j] = true;
                 }
@@ -197,6 +197,13 @@ void lock_pairs(void)
         }
     }
     return;
+}
+
+//Checks if locking a pair creates a cycle
+bool check_cycle(int pairindex[])
+{
+
+    return false;
 }
 
 // Print the winner of the election
