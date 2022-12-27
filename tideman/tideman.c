@@ -217,7 +217,7 @@ bool cycle(int pairindex)
         }
         if(currentpos == pairindex)
         {
-            printf("cycle at pair [%i], where winner = %s and loser = %s\n", pairindex, candidates[pairs[pairindex].winner], candidates[pairs[pairindex].loser]);
+            printf("cycle at pair [%i], where winner = %i and loser = %i\n", pairindex, pairs[pairindex].winner, pairs[pairindex].loser);
             return true;
         }
     }
