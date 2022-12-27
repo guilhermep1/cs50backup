@@ -231,8 +231,11 @@ void print_winner(void)
             {
                 break;
             }
-            source = i
+            source = j;
         }
     }
+
+    printf("%s\n", candidates[source]);
+
     return;
 }
