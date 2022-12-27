@@ -207,6 +207,7 @@ void print_winner(void)
 
     for (int i = 0; i < candidate_count; i++)
     {
+        bool found_source = false;
         int j = 0;
         while (j < candidate_count)
         {
