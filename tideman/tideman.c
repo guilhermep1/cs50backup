@@ -209,7 +209,7 @@ bool check_cycle(int pairindex)
     {
         if (locked[pairindex][i] == true)
         {
-            
+            goesto = i;
         }
     }
 
