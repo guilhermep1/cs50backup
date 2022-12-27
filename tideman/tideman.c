@@ -33,7 +33,7 @@ void add_pairs(void);
 void sort_pairs(void);
 void lock_pairs(void);
 void print_winner(void);
-bool cycle(int pairindex);
+bool check_cycle(int n, int m);
 
 int main(int argc, string argv[])
 {
@@ -184,39 +184,43 @@ void sort_pairs(void)
 // Lock pairs into the candidate graph in order, without creating cycles
 void lock_pairs(void)
 {
-    for (int i = 0; i < pair_count; i++)
+        for (int i = 0; i < pair_count; i++)
     {
-        if (!cycle())
-        // for (int j = 0; j < candidate_count; j++)
-        // {
-        //     for (int k = 0; k < pair_count; k++)
-        //     {
-        //         if (pairs[k].winner == i && pairs[k].loser == j && !cycle(k))
-        //         {
-        //             locked[i][j] = true;
-        //         }
-        //     }
-        // }
+        if (!check_cycle(pairs[i].winner, pairs[i].loser))
+        {
+            locked[pairs[i].winner][pairs[i].loser] = true;
+        }
     }
+    // for (int i = 0; i < pair_count; i++)
+    // {
+    //     if (!cycle())
+    //     // for (int j = 0; j < candidate_count; j++)
+    //     // {
+    //     //     for (int k = 0; k < pair_count; k++)
+    //     //     {
+    //     //         if (pairs[k].winner == i && pairs[k].loser == j && !cycle(k))
+    //     //         {
+    //     //             locked[i][j] = true;
+    //     //         }
+    //     //     }
+    //     // }
+    // }
     return;
 }
 
 //Checks if locking a pair creates a cycle
-bool cycle(int pairindex)
+bool check_cycle(int n, int m)
 {
-    int currentpos = pairs[pairindex].loser;
-    for (int i = 0; i < pair_count; i++)
+    if (locked[m][n] == true)
     {
-        for (int j = 0; j < pair_count; j++)
-        {
-            if (locked[currentpos][j] == true)
+        return true;
+    }
+
+    for (int i = 0; i < candidate_count; i++)
+    {
+        if (locked[i][n] == true)
             {
-                currentpos = j;
-            }
-            if (currentpos == pairs[pairindex].winner)
-            {
-                return true;
-            }
+            return check_cycle(i, b);
         }
     }
     return false;
