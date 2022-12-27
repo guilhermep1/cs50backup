@@ -206,7 +206,7 @@ bool check_cycle(int pairindex)
     {
         for (int j = 0; j < candidate_count; j++)
         {
-
+            
         }
     }
 
