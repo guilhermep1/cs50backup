@@ -209,7 +209,7 @@ bool cycle(int pairindex)
     {
         for (int j = 0; j < pair_count; j++)
         {
-            if(locked[currentpos][j])
+            if(locked[currentpos][j] == true)
             {
                 currentpos = j;
             }
