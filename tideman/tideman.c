@@ -217,14 +217,10 @@ void print_winner(void)
 
     for (int i = 0; i < candidate_count; i++)
     {
-        for (int j = 0; j < candidate_count; j++)
+        int j = 0;
+        while (j < candidate_count)
         {
-            bool source = false;
-            
-            if (locked[j][i] == true)
-            {
-                j++;
-            }
+            if(locked)
         }
     }
 
