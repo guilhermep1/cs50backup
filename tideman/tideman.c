@@ -219,6 +219,8 @@ void print_winner(void)
     {
         for (int j = 0; j < candidate_count; j++)
         {
+            bool source = false;
+            
             if (locked[j][i] == true)
             {
                 j++;
