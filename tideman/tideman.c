@@ -205,7 +205,7 @@ bool check_cycle(int n, int m)
     for (int i = 0; i < candidate_count; i++)
     {
         if (locked[i][n] == true)
-            {
+        {
             return check_cycle(i, m);
         }
     }
