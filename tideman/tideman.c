@@ -215,20 +215,24 @@ bool check_cycle(int n, int m)
 // Print the winner of the election
 void print_winner(void)
 {
-    int source;
-
     for (int i = 0; i < candidate_count; i++)
     {
+        int counter = 0;
+
         for (int j = 0; j < candidate_count; j++)
         {
-            if(locked[j][i] == true)
+            if(!locked[j][i])
             {
-                break;
+                counter++;
             }
-            source = j;
         }
-    }
-    printf("%s\n", candidates[source]);
 
+        if (counter == candidate_count)
+        {
+            printf("%s\n", candidates[i]);
+            return;
+        }
+
+    }
     return;
 }
