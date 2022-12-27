@@ -207,7 +207,10 @@ bool check_cycle(int pairindex)
 
     for (i = 0; i < pair_count; i++)
     {
-        for 
+        for (int j = 0; j < pair_count; j++)
+        {
+            
+        }
     }
 
     return false;
