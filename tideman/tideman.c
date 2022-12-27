@@ -221,7 +221,7 @@ bool cycle(int pairindex)
             return true;
         }
     }
-    printf("no cycle\n");
+    printf("no cycle\n\n\n");
 
     return false;
 }
