@@ -212,10 +212,10 @@ bool cycle(int pairindex)
             {
                 currentpos = j;
             }
-        }
-        if (currentpos == pairs[pairindex].winner)
-        {
-            return true;
+            if (currentpos == pairs[pairindex].winner)
+            {
+                return true;
+            }
         }
     }
     return false;
