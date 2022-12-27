@@ -213,13 +213,11 @@ bool cycle(int pairindex)
             {
                 currentpos = j;
             }
-
+        }
             if(currentpos == pairindex)
             {
                 return true;
             }
-        }
-
     }
 
     return false;
