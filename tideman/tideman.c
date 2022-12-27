@@ -202,11 +202,13 @@ void lock_pairs(void)
 //Checks if locking a pair creates a cycle
 bool check_cycle(int pairindex)
 {
-    int goesto, i;
+    int goesto;
+    int i = 0;
 
-    for (i = 0; i < pair_count; i++)
+    while (i < pair_count)
     {
-        
+        if(locked[])
+        break;
     }
 
     return false;
