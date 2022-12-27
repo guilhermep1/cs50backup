@@ -207,9 +207,9 @@ bool check_cycle(int pairindex)
 
     for (i = 0; i < pair_count; i++)
     {
-        for (int j = 0; j < pair_count; j++)
+        if (locked[pairindex][i] == true)
         {
-            
+            goesto = i;
         }
     }
 
