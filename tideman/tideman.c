@@ -161,6 +161,7 @@ void sort_pairs(void)
 
     for (int i = 0; i < pair_count; i++)
     {
+        int replace;
         int strongest = i;
         for(int j = i + 1; j < pair_count; j++)
         {
@@ -170,7 +171,12 @@ void sort_pairs(void)
                 strongest = j;
             }
         }
-        sorted[i] = pairs[strongest];
+        if(i != strongest)
+        {
+            replace = pairs[i];
+            pairs[i] = pairs[strongest];
+            pairs[strongest] = replace;
+        }
     }
 
     for (int i = 0; i < pair_count; i++)
