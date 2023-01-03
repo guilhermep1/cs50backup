@@ -53,8 +53,8 @@ bool verify()
     {
         for(int j = i + 1; j < 10; j++)
         {
-            
+            if(arr[i])
         }
     }
-    return false;
+    return true;
 }
