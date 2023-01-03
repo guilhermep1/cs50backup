@@ -18,26 +18,30 @@ int main(void)
     {
         printf("%i ", arr[i]);
     }
+    printf("\n");
 }
 
 void sortarr(void)
 {
-    for (int i = 0; i < 10; i++)
+    while (!verify)
     {
-        int replace;
-        int min = i;
-        for (int j = i + 1; j < 10; j++)
+        for (int i = 0; i < 10; i++)
         {
-            if(arr[j] < arr[i])
+            int replace;
+            int min = i;
+            for (int j = i + 1; j < 10; j++)
             {
-                min = j;
+                if(arr[j] < arr[i])
+                {
+                    min = j;
+                }
             }
-        }
-        if (i != min)
-        {
-            replace = arr[i];
-            arr[i] = arr[min];
-            arr[min] = replace;
+            if (i != min)
+            {
+                replace = arr[i];
+                arr[i] = arr[min];
+                arr[min] = replace;
+            }
         }
     }
 }
