@@ -27,12 +27,14 @@ void sortarr(void)
         {
             if(arr[j] < arr[i])
             {
-                min = arr[j];
+                min = j;
             }
         }
         if (arr[i] != min)
         {
-            replace = arr[i]
+            replace = arr[i];
+            arr[i] = arr[min];
+            arr[min] = replace;
         }
     }
 }
