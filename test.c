@@ -33,7 +33,7 @@ void sortarr(void)
                 min = j;
             }
         }
-        if (arr[i] != min)
+        if (i != min)
         {
             replace = arr[i];
             arr[i] = arr[min];
