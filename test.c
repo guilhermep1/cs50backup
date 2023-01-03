@@ -9,7 +9,7 @@ void sortarr();
 bool verify();
 
 //main function
-int main(void)
+int main(int argc, string argv)
 {
     //sorting array
     sortarr();
