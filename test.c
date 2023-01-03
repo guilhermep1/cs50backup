@@ -1,12 +1,15 @@
 #include <cs50.h>
 #include <stdio.h>
 
+//defining array length and values
+int arr[10] = {0, 7, 8, 5, 4, 1, 2, 3, 9, 6};
+
+//function prototype
 void sortarr(void);
 
+//main function
 int main(void)
 {
-    //defining array length and values
-    int arr[10] = [0, 7, 8, 5, 4, 1, 2, 3, 9, 6];
     //sorting array
     sortarr();
     //printing sorted array
