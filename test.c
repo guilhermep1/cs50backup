@@ -5,7 +5,8 @@
 int arr[10] = {0, 7, 8, 5, 4, 1, 2, 3, 9, 6};
 
 //function prototype
-void sortarr(void);
+void sortarr();
+bool verify();
 
 //main function
 int main(void)
@@ -21,9 +22,9 @@ int main(void)
     printf("\n");
 }
 
-void sortarr(void)
+void sortarr()
 {
-    while (!verify)
+    while (!verify())
     {
         for (int i = 0; i < 10; i++)
         {
@@ -43,5 +44,13 @@ void sortarr(void)
                 arr[min] = replace;
             }
         }
+    }
+}
+
+bool verify()
+{
+    for (int i = 0; i < 10; i ++)
+    {
+        if
     }
 }
