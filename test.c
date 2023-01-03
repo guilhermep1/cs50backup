@@ -19,5 +19,17 @@ int main(void)
 
 void sortarr(void)
 {
-    
+    for (int i = 0; i < 10; i++)
+    {
+        int replace;
+        int min = i;
+        for(int j = i + 1; j < 10; j++)
+        {
+            if(j < i)
+            {
+                min = j;
+                
+            }
+        }
+    }
 }
