@@ -6,7 +6,7 @@ void sortarr(void);
 int main(void)
 {
     //defining array length and values
-    int arr[10] = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    int arr[10] = [0, 7, 8, 5, 4, 1, 2, 3, 9, 6];
     //sorting array
     sortarr();
     //printing sorted array
@@ -23,13 +23,16 @@ void sortarr(void)
     {
         int replace;
         int min = i;
-        for(int j = i + 1; j < 10; j++)
+        for (int j = i + 1; j < 10; j++)
         {
-            if(j < i)
+            if(arr[j] < arr[i])
             {
-                min = j;
-                
+                min = arr[j];
             }
+        }
+        if (arr[i] != min)
+        {
+            replace = arr[i]
         }
     }
 }
