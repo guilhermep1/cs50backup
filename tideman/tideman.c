@@ -169,7 +169,7 @@ void sort_pairs(void)
             {
                 strongest = j;
             }
-        }
+        }a
         if(i != strongest)
         {
             replace = pairs[i];
