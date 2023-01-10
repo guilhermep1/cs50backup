@@ -9,7 +9,7 @@ void colorize(int height, int width, RGBTRIPLE image[height][width])
             RGBTRIPLE pixel = image[i][j];
             if(pixel == [0, 0, 0])
             {
-                image[i][j].
+                image[i][j]
             }
         }
     }
