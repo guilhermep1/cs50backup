@@ -1,5 +1,6 @@
 #include "helpers.h"
 
+//Changes each black pixel to a specified color
 void colorize(int height, int width, RGBTRIPLE image[height][width])
 {
     for (int i = 0; i < height; i++)
