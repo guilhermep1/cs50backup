@@ -7,9 +7,12 @@ void colorize(int height, int width, RGBTRIPLE image[height][width])
     {
         for (int j = 0; j < width; j++)
         {
+            //reads a pixel
             RGBTRIPLE pixel = image[i][j];
-            if(pixel.rgbtBlue == 0 && pixel.rgbtGreen == 0 && pixel.rgbtRed == 0)
+            //checks if pixel's color is black
+            if (pixel.rgbtBlue == 0 && pixel.rgbtGreen == 0 && pixel.rgbtRed == 0)
             {
+                //paints the pixel red
                 image[i][j].rgbtRed = 255;
             }
         }
